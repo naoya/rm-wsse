@@ -1,6 +1,14 @@
 # RmWsse
 
+[![Build Status](https://travis-ci.org/naoya/rm-wsse.png?branch=master)](https://travis-ci.org/naoya/rm-wsse)
+
 gem for RubyMotion, to create WSSE header string.
+
+It depends:
+
+- rm-digest
+- motion-cocoapods
+    - Base64
 
 ## Usage
 
