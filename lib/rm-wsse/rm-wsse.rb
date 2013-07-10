@@ -3,6 +3,7 @@ class RmWsse
     def wsse_header(user, password, date = nil, rnd = nil)
       formatter = NSDateFormatter.new.tap do |f|
         f.setDateFormat("yyyy-MM-dd'T'HH:mm:ssZZZ")
+        f.setTimeZone(NSTimeZone.timeZoneWithAbbreviation('GMT'))
       end
 
       date ||= NSDate.new

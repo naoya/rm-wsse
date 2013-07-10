@@ -12,9 +12,9 @@ describe "WSSE header" do
     created = NSDate.alloc.initWithString("1977-09-18 12:34:56 +0900")
     header = RmWsse.wsse_header("melody", "nelson", created, 100)
 
-    digest = 'cIYQOAtdYIAQhQv7KfEijYyLhoM='
-    nonce  = 'YTVmNGZjMDgxNmYxMjNhYTc0MTJhNjMxOGY1NThmOGM0ZmYyMWQ5ZQ=='
+    digest = '16X786l2f/CIhNS7Ojfxl3Ogw3Y='
+    nonce  = 'NGI5MDVlNzU2NGM4YTU4ODNlMjNkNTdkNWJkZDhmOWFlMmI5ZTkzZA=='
 
-    header.should == "UsernameToken Username=\"melody\", PasswordDigest=\"#{digest}\", Nonce=\"#{nonce}\", Created=\"1977-09-18T12:34:56+0900\""
+    header.should == "UsernameToken Username=\"melody\", PasswordDigest=\"#{digest}\", Nonce=\"#{nonce}\", Created=\"1977-09-18T03:34:56+0000\""
   end
 end
