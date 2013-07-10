@@ -27,27 +27,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rm-digest
+    $ gem install rm-wsse
 
 ## Copyright
 
 * Copyright (c) 2013- Naoya Ito (@naoya_ito)
 * License
   * Apache License, Version 2.0
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'fluent-plugin-config-pit'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install fluent-plugin-config-pit
 
 ## Contributing
 
