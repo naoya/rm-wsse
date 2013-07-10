@@ -1,6 +1,6 @@
 # RmWsse
 
-gem for RubyMotion to creates WSSE header string.
+gem for RubyMotion, to create WSSE header string.
 
 ## Usage
 
