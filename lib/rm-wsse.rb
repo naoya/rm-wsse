@@ -1,3 +1,6 @@
+require 'motion-cocoapods'
+requrie 'rm-digest'
+
 unless defined?(Motion::Project::Config)
   raise "This file must be requried within a RubyMotion project Rakefile."
 end
