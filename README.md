@@ -25,7 +25,7 @@ BW::HTTP.post('http://example.com/api', {
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add these lines to your application's Gemfile:
 
     gem 'rm-wsse'
 
@@ -36,6 +36,14 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rm-wsse
+
+Then, also add these lines to your application's Rakefile:
+
+    app.pods do
+      pod 'Base64'
+    end
+
+This brings [Base64 library](https://github.com/ekscrypto/Base64) to your project.
 
 ## Copyright
 

@@ -1,4 +1,3 @@
-require 'motion-cocoapods'
 require 'rm-digest'
 
 unless defined?(Motion::Project::Config)
@@ -8,10 +7,6 @@ end
 Motion::Project::App.setup do |app|
   Dir.glob(File.join(File.dirname(__FILE__), 'rm-wsse/*.rb')).each do |file|
     app.files.unshift(file)
-  end
-
-  app.pods do
-    pod 'Base64'
   end
 end
 
