@@ -7,8 +7,6 @@ gem for RubyMotion, to create WSSE header string.
 It depends:
 
 - rm-digest
-- motion-cocoapods
-    - Base64
 
 ## Usage
 
@@ -28,6 +26,9 @@ BW::HTTP.post('http://example.com/api', {
 Add these lines to your application's Gemfile:
 
     gem 'rm-wsse'
+    gem 'bubble-wrap'
+    
+If Gemfile does not exist, run ```bundle init``` then created it.
 
 And then execute:
 
@@ -39,11 +40,24 @@ Or install it yourself as:
 
 Then, also add these lines to your application's Rakefile:
 
-    app.pods do
-      pod 'Base64'
-    end
+    require 'rm-wsse'
+    require 'bubble-wrap'
 
-This brings [Base64 library](https://github.com/ekscrypto/Base64) to your project.
+Your Rakefile looks like this:
+
+```Ruby
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/ios'
+require 'rm-wsse'
+require 'bubble-wrap'
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'Your App name'
+end
+```
+
 
 ## Copyright
 
