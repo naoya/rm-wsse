@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rm-wsse (0.0.2)
+    rm-wsse (0.0.3)
       cocoapods
       motion-cocoapods
       rm-digest
