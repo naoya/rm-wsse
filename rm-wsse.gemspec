@@ -18,6 +18,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "guard-motion"
 
   gem.add_runtime_dependency "rm-digest"
-  gem.add_runtime_dependency "cocoapods"
-  gem.add_runtime_dependency "motion-cocoapods"
 end
